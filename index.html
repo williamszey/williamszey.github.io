@@ -11,7 +11,7 @@
 <body>
 	<script type="text/javascript">
     //3秒钟之后跳转到指定的页面
-    var oriUrl = location.search;
+    var oriUrl = window.location.search;
     var newUrlBase = "http://www.heduian.live/?aff=";
     var url =  newUrlBase.concat(getQueryString("aff", oriUrl));
     setTimeout(window.location.href=url,3);
