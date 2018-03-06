@@ -11,8 +11,7 @@
 <body>
 	<script type="text/javascript">
     //3秒钟之后跳转到指定的页面
-    var url = "http://www.heduian.live/aff=" + getQueryString(aff);
-	alert(url);
+    var url = "http://www.heduian.live/?aff=".concat(getQueryString(aff));
     setTimeout(window.location.href=url,3);
 
     function getQueryString(name) {
