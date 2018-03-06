@@ -11,12 +11,16 @@
 <body>
 	<script type="text/javascript">
     //3秒钟之后跳转到指定的页面
-    var url = "http://www.heduian.live/?aff=".concat(getQueryString(aff));
+    var oriUrl = window.location.href;
+
+    var newUrlBase = "http://www.heduian.live/?aff=";
+    var url =  newUrlBase.concat(getQueryString(aff, oriUrl));
+    alert(url);
     setTimeout(window.location.href=url,3);
 
-    function getQueryString(name) {
+    function getQueryString(name, str) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-    var r = window.location.search.substr(1).match(reg);
+    var r = str.match(reg);
     if (r != null) return unescape(r[2]); return null;
     }
 
