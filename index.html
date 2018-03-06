@@ -11,7 +11,16 @@
 <body>
 	<script type="text/javascript">
     //3秒钟之后跳转到指定的页面
-    setTimeout(window.location.href='http://www.heduian.live',10);
+    var url = "http://www.heduian.live/aff=" + getQueryString(aff);
+	alert(url);
+    setTimeout(window.location.href=url,3);
+
+    function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+    }
+
 </script>
 10秒后即将跳转到河对岸官网...</br>
 <a href="http://www.heduian.live" target="_blank">河对岸加速器官方网址</a>
