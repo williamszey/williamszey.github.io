@@ -2,27 +2,44 @@
 <html lang="en">
 <head >
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="L-9mQb8W4Pa98ui_8MX58aONzsjPCiObg4HnubGq1vY" />
+    <meta name="google-site-verification" content="L-9mQb8W4Pa98ui_8MX58aONzsjPCiObg4HnubGq1vY" />
     <meta name="baidu-site-verification" content="MvsH0duaRl" />
-    <meta name="keywords" content="河对岸加速器,河对岸云服务, 河对岸, 91天路">
+    <meta name="keywords" content="河对岸加速器,河对岸云服务, 河对岸">
     <meta name="description" content="河对岸云服务，加速大量国内外应用，满足外贸从业者、IT科技工作者、海淘爱好者以及外游玩家等的网络加速服务需求">
-   <meta http-equiv="refresh" content="0;url=http://www.heduian.top/">
-    <title>河对岸加速器</title>
+    <!--<meta http-equiv="refresh" content="0;url=http://www.heduian.top/">-->
+    <title>河对岸加速器|河对岸云服务</title>
 </head>
 <body>
-	<script type="text/javascript">
-    //3秒钟之后跳转到指定的页面
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120844063-2"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120844063-2');
+  
 	var oriUrl = window.location.search;
     var newUrlBase = "http://www.heduian.top/";
-    var url =  newUrlBase.concat(getQueryString("aff", oriUrl));
-    setTimeout(window.location.href=newUrlBase,3);
-
-    function getQueryString(name, str) {
-    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-    var r = str.match(reg);
-    if (r != null) return unescape(r[2]); return null;
+    var url = newUrlBase;
+    if (getQueryVariable("aff")) {
+   		url =  newUrlBase + "aff.php?aff=" + getQueryVariable("aff");
+    }
+    //var url =  newUrlBase + getQueryVariable("aff");//getQueryString("aff", oriUrl);//newUrlBase.concat(getQueryString("aff", oriUrl));
+    //alert(url);
+    setTimeout(window.location.href=url,3);
+  
+    function getQueryVariable(variable) {
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
     }
 </script>
-<a href="http://heduian.top" target="_blank">河对岸加速器官方网址</a>
+<a href="http://www.heduian.top/" target="_blank">河对岸加速器官方网址</a>
 </br>
 </p>  
 <a href="https://williamszey.github.io/download.html" target="_blank">各平台软件下载</a>
