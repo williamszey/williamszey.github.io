@@ -1,47 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+  
+  <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="L-9mQb8W4Pa98ui_8MX58aONzsjPCiObg4HnubGq1vY" />
-    <meta name="google-site-verification" content="L-9mQb8W4Pa98ui_8MX58aONzsjPCiObg4HnubGq1vY" />
-    <meta name="baidu-site-verification" content="MvsH0duaRl" />
+    <meta name="baidu-site-verification" content="LGjL3htUuf" />
     <meta name="keywords" content="河对岸加速器,河对岸云服务, 河对岸">
-    <meta name="description" content="河对岸云服务，游戏加速器">
-    <!--<meta http-equiv="refresh" content="0;url=http://www.heduian.top/">-->
-    <title>河对岸加速器|河对岸云服务</title>
-</head>
-<body>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120844063-2"></script>
-<script type="text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta name="description" content="河对岸云服务，加速大量国内外应用，满足外贸从业者、IT科技工作者、海淘爱好者以及外游玩家等的网络加速服务需求">
+    <title>河对岸加速器官网|河对岸云服务</title>
+    <style type="text/css">.error_tip{ margin: 200px auto; text-align: center; } .mt20{ margin-top: 20px; } .bold{ font-weight: bold; } .pr3{ padding-right: 3px; }</style></head>
+  
+  <body>
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120844063-1"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-120844063-1');
 
-  gtag('config', 'UA-120844063-2');
-  
-	var oriUrl = window.location.search;
-    var newUrlBase = "http://www.heduian.today/";
-    var url = newUrlBase;
-    if (getQueryVariable("aff")) {
-   		url =  newUrlBase + "aff.php?aff=" + getQueryVariable("aff");
-    }
-    //var url =  newUrlBase + getQueryVariable("aff");//getQueryString("aff", oriUrl);//newUrlBase.concat(getQueryString("aff", oriUrl));
-    //alert(url);
-    setTimeout(window.location.href=url,3);
-  
-    function getQueryVariable(variable) {
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-       return(false);
-    }
-</script>
-<a href="http://www.heduian.today/" target="_blank">河对岸加速器官方网址</a>
-</br>
-</p>  
-</p>  
-</body>
+      var oriUrl = window.location.search;
+      var newUrlBase = "http://www.heduian.today/";
+      var url = newUrlBase;
+      if (getQueryVariable("aff")) {
+        url = newUrlBase + "aff.php?aff=" + getQueryVariable("aff");
+        window.location.href = url;
+      } else {
+        //var url =  newUrlBase + getQueryVariable("aff");//getQueryString("aff", oriUrl);//newUrlBase.concat(getQueryString("aff", oriUrl));
+        //alert(url);
+        //setTimeout(window.location.href=url,3);
+        //
+        function gotoIndex() {
+          location = url; // 换成自己的首页地址  
+        };
+
+        $(function() {
+          var timeTotalObj = $("#timeTotal");
+          var timeOutObj;
+
+          function timeCountdown() {
+            var timeValue = timeTotalObj.text();
+            var timeValueInt = parseInt(timeValue);
+            if (timeValueInt == 0) {
+              gotoIndex();
+              return;
+            }
+            timeTotalObj.text(timeValueInt - 1);
+            timeOutObj = setTimeout(timeCountdown, 1000);
+          };
+
+          timeCountdown();
+        });
+      }
+
+      //
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+        return (false);
+      }
+
+      //收藏本站
+      function AddFavorite(title, url) {
+        try {
+          window.external.addFavorite(url, title);
+        } catch(e) {
+          try {
+            window.sidebar.addPanel(title, url, "");
+          } catch(e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+          }
+        }
+      }
+      //保存到桌面
+      function toDesktop(sUrl, sName) {
+        try {
+          var WshShell = new ActiveXObject("WScript.Shell");
+          var oUrlLink = WshShell.CreateShortcut(WshShell.SpecialFolders("Desktop") + "\\" + sName + ".url");
+          oUrlLink.TargetPath = sUrl;
+          oUrlLink.Save();
+        } catch(e) {
+          alert("当前IE安全级别不允许操作！");
+        }
+      }
+    </script>
+    <div class="error_tip">
+      <div class="bold">
+        <a href="javascript:void(0);" onclick="AddFavorite('河对岸云服务|河对岸加速器官网',location.href)">收藏</a>此页面,直达河对岸官网</div>
+      <div class="mt20">
+        <a href="http://www.heduian.today">点击直接进入</a>(
+        <span id="timeTotal" class="pr3">6</span>秒)</div>
+      若无法打开网站联系客服QQ:1807462103
+      <!--<a href="javascript:void(0);" onclick="AddFavorite('河对岸云服务|河对岸加速器官网',location.href)">收藏</a>-->
+      <!--<a href="javascript:void(0);" onclick=" toDesktop(location.href，'河对岸云服务')">保存到桌面</a>--></div>
+  </body>
+
 </html>
