@@ -36,13 +36,13 @@
       var url = newUrlBase;
       if (getQueryVariable("code")) {
         url = newUrlBase + "auth/register?code=" + getQueryVariable("code");
-        window.location.href = url;
+        //window.location.href = url;
       } else {
         //var url =  newUrlBase + getQueryVariable("aff");//getQueryString("aff", oriUrl);//newUrlBase.concat(getQueryString("aff", oriUrl));
         //alert(url);
         //setTimeout(window.location.href=url,3);
         //
-        window.location.href = url;
+        //window.location.href = url;
         function gotoIndex() {
           location = url;  
         };
@@ -108,7 +108,7 @@
         <a href="javascript:void(0);" onclick="AddFavorite('河对岸云服务|河对岸官网',location.href)">收藏</a>此页面,直达河对岸官网</div>
       <div class="mt20">
         <a href="http://www.heduian.best">点击直接进入</a>(
-        <span id="timeTotal" class="pr3">5</span>秒)</div>
+        <span id="timeTotal" class="pr3">4</span>秒)</div>
 </div>
   </body>
 
