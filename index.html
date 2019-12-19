@@ -30,10 +30,9 @@
     		var Rand = Math.random();
     		return(Min + Math.round(Rand * Range));
 		}
-		var num = GetRandomNum(100, 10000);
 
       var oriUrl = window.location.search;
-      var newUrlBase = "http://www.heduian.best/t=" + nmu;
+      var newUrlBase = "http://www.heduian.best/t=" + GetRandomNum(100, 10000);
       var url = newUrlBase;
       if (getQueryVariable("code")) {
         url = newUrlBase + "auth/register?code=" + getQueryVariable("code");
