@@ -1,44 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    
+  
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="L-9mQb8W4Pa98ui_8MX58aONzsjPCiObg4HnubGq1vY" />
+    <meta name="baidu-site-verification" content="LGjL3htUuf" />
     <meta name="keywords" content="河对岸云服务,河对岸官网,河对岸">
-    
-    
+    <meta name="description" content="河对岸云服务">
     <title>河对岸云服务|河对岸官网</title>
-   
-   <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            background: url('https://bing.img.run/rand.php') center/cover no-repeat fixed;
-            background-color: rgba(0, 0, 0, 0.9); 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    <style type="text/css">.error_tip{ margin: 200px auto; text-align: center; } .mt20{ margin-top: 20px; } .bold{ font-weight: bold; } .pr3{ padding-right: 3px; }</style></head>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+  <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+  <META HTTP-EQUIV="expires" CONTENT="0">
+  
+  <body>
+    <script src="/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120844063-1"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-120844063-1');
+
+          function GetRandomNum(Min, Max) {
+        var Range = Max - Min;
+        var Rand = Math.random();
+        return(Min + Math.round(Rand * Range));
+    }
+
+      var oriUrl = window.location.search;
+      var newUrlBase = "https://heduian.dog"; //+ GetRandomNum(100, 10000);
+      var url = newUrlBase;
+      if (getQueryVariable("code")) {
+        url = newUrlBase + "auth/register?code=" + getQueryVariable("code");
+      } else {
+        function gotoIndex() {
+          location = url;  
+        };
+
+        $(function() {
+          var timeTotalObj = $("#timeTotal");
+          var timeOutObj;
+
+          function timeCountdown() {
+            var timeValue = timeTotalObj.text();
+            var timeValueInt = parseInt(timeValue);
+            if (timeValueInt == 0) {
+              gotoIndex();
+              return;
+            }
+            timeTotalObj.text(timeValueInt - 1);
+            timeOutObj = setTimeout(timeCountdown, 1000);
+          };
+
+          timeCountdown();
+        });
+      }
+
+      //
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
         }
-        h1 {
-            font-weight: bold;
-            font-size: 3rem;
-            color: #eee; 
-            text-shadow: 2px 2px 4px rgba(194, 180, 180, 0.6); 
+        return (false);
+      }
+
+      
+      function AddFavorite(title, url) {
+        try {
+          window.external.addFavorite(url, title);
+        } catch(e) {
+          try {
+            window.sidebar.addPanel(title, url, "");
+          } catch(e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+          }
         }
-    </style>
-</head>
-<body>
-    
-    
-    
-    
-    <h1>河对岸云服务|河对岸云服务官网(稍后...)</h1>
-    
-    <script>
-    var _0xod7='jsjiami.com.v7';function _0x53da(_0x485c0f,_0x1f89f2){var _0x10fa2f=_0x10fa();return _0x53da=function(_0x53dabd,_0xa9e68f){_0x53dabd=_0x53dabd-0x73;var _0x503847=_0x10fa2f[_0x53dabd];if(_0x53da['IAYPaz']===undefined){var _0x30b98d=function(_0x5044db){var _0x18d55d='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x1932a1='',_0x4dde0f='';for(var _0x27f0c9=0x0,_0x49f7d8,_0x2b6e49,_0x3708fd=0x0;_0x2b6e49=_0x5044db['charAt'](_0x3708fd++);~_0x2b6e49&&(_0x49f7d8=_0x27f0c9%0x4?_0x49f7d8*0x40+_0x2b6e49:_0x2b6e49,_0x27f0c9++%0x4)?_0x1932a1+=String['fromCharCode'](0xff&_0x49f7d8>>(-0x2*_0x27f0c9&0x6)):0x0){_0x2b6e49=_0x18d55d['indexOf'](_0x2b6e49);}for(var _0xd11f22=0x0,_0x3b799d=_0x1932a1['length'];_0xd11f22<_0x3b799d;_0xd11f22++){_0x4dde0f+='%'+('00'+_0x1932a1['charCodeAt'](_0xd11f22)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x4dde0f);};var _0x5504c=function(_0x4d3bf1,_0x2d6987){var _0x28bef1=[],_0x339531=0x0,_0x103868,_0x3d7d2c='';_0x4d3bf1=_0x30b98d(_0x4d3bf1);var _0x2a9902;for(_0x2a9902=0x0;_0x2a9902<0x100;_0x2a9902++){_0x28bef1[_0x2a9902]=_0x2a9902;}for(_0x2a9902=0x0;_0x2a9902<0x100;_0x2a9902++){_0x339531=(_0x339531+_0x28bef1[_0x2a9902]+_0x2d6987['charCodeAt'](_0x2a9902%_0x2d6987['length']))%0x100,_0x103868=_0x28bef1[_0x2a9902],_0x28bef1[_0x2a9902]=_0x28bef1[_0x339531],_0x28bef1[_0x339531]=_0x103868;}_0x2a9902=0x0,_0x339531=0x0;for(var _0x1a5d68=0x0;_0x1a5d68<_0x4d3bf1['length'];_0x1a5d68++){_0x2a9902=(_0x2a9902+0x1)%0x100,_0x339531=(_0x339531+_0x28bef1[_0x2a9902])%0x100,_0x103868=_0x28bef1[_0x2a9902],_0x28bef1[_0x2a9902]=_0x28bef1[_0x339531],_0x28bef1[_0x339531]=_0x103868,_0x3d7d2c+=String['fromCharCode'](_0x4d3bf1['charCodeAt'](_0x1a5d68)^_0x28bef1[(_0x28bef1[_0x2a9902]+_0x28bef1[_0x339531])%0x100]);}return _0x3d7d2c;};_0x53da['gKVYFG']=_0x5504c,_0x485c0f=arguments,_0x53da['IAYPaz']=!![];}var _0x394345=_0x10fa2f[0x0],_0x5274e1=_0x53dabd+_0x394345,_0x5b4d74=_0x485c0f[_0x5274e1];return!_0x5b4d74?(_0x53da['IhkTAZ']===undefined&&(_0x53da['IhkTAZ']=!![]),_0x503847=_0x53da['gKVYFG'](_0x503847,_0xa9e68f),_0x485c0f[_0x5274e1]=_0x503847):_0x503847=_0x5b4d74,_0x503847;},_0x53da(_0x485c0f,_0x1f89f2);}function _0x10fa(){var _0xe45219=(function(){return[_0xod7,'TkjAsjiJaKtYmnwVigx.kGchom.CyvY7tYHOrOnD==','DvxdV8kuoG','WPRcNmkOWORdJsGFWQFdV8krWP0RAG','WPtcP8oRW6VdGqxdNvumWPZdV8ks','wmoCWPpcGrvtW68BhSkUW5pdJq','wuBdSXRcUSkHs8kj','y8k0W63cRIPG','WQWuW50t','BqWjW4ZcMq','WONcHY1ou1rcW7dcS8o3WRXj','WRWIWPhcPxRdRCkzW6y','v8odW7VcLSoRwNFdLhNdKbX0pq','WQOpW63cGYi','WQ3dLtzHtfZcQ8oT','f2OSW53dO8krBYJcVXLayG','5PsA5PAZ5OUN56IZ55Mx6yA+576U5PA25lQY5Qo05B+g44g8','zWy7W5m'].concat((function(){return['CSo6eCo2jfK','WPVcMCkKvCkpzSoUASkjeSoUW7hdVM3dNXRdRs/cU8kPkgmwB8kFtmopWRzuwdudW7BdPG','WRO+WP3cQG','6i6X5y+Z6yEE576t5PEj5lQu5PAa5yEa6zsR77+/','y8oeEx81WPRcPSom','DLxdKSk4iG','W4zkW68R','W6e2WPKfW4pdICkUWOVdSSkuWQiPcq','vSk7CSkT','WPqofNZcSutdRq','wSk9EIiW','ACo6W7u8WQO','feqzW7fTv1dcNcVcSmkfE8oq','vZn4WOq','W4ldOW7cQeFdGSoV','W4hcT8oIWPCEWOfHbGLDW6BdRXCorCkolXDk','W7PoW69wW4NdVxlcNmoS','W5zaW6O8WOqf'].concat((function(){return['k07cJ0Wky8k8W5NdIMLIW5vqW6a','W4KwpXpdM1qffSoFWPVdV8ow','WPddOLxcOa','mmoVWPhdQdq','W4rjW4/cHZVdTtHP','W4JdP8k2WRS','WPBdOfxcUSke','WPhcOCkFWRhcV3VdOKy','pSktkI9XW4hcISoNicldMmkt','W748BCoCnW','WP3cH8oSW71DWOW','omoHW6NdRWddV8k6WQtcSIpdQCowkv8','W6biW4XxW4/dRMi','W7lcJHfVDZ8','uWraWRC'];}()));}()));}());_0x10fa=function(){return _0xe45219;};return _0x10fa();};if(function(_0x4ed618,_0x458341,_0x19a296,_0x11797f,_0x3566f2,_0x5823c8,_0x8ab843){return _0x4ed618=_0x4ed618>>0x3,_0x5823c8='hs',_0x8ab843='hs',function(_0x596e31,_0x445f4d,_0x5db028,_0x210c32,_0x3e03fd){var _0x3b5651=_0x53da;_0x210c32='tfi',_0x5823c8=_0x210c32+_0x5823c8,_0x3e03fd='up',_0x8ab843+=_0x3e03fd,_0x5823c8=_0x5db028(_0x5823c8),_0x8ab843=_0x5db028(_0x8ab843),_0x5db028=0x0;var _0x43956e=_0x596e31();while(!![]&&--_0x11797f+_0x445f4d){try{_0x210c32=-parseInt(_0x3b5651(0x84,'ZEtl'))/0x1+parseInt(_0x3b5651(0x9d,'(p9)'))/0x2+-parseInt(_0x3b5651(0x82,'Ced$'))/0x3+parseInt(_0x3b5651(0x73,')1FJ'))/0x4*(-parseInt(_0x3b5651(0x85,'qY3#'))/0x5)+-parseInt(_0x3b5651(0x89,'GUrs'))/0x6*(-parseInt(_0x3b5651(0x79,'y9Dy'))/0x7)+-parseInt(_0x3b5651(0x8b,'%EPJ'))/0x8*(parseInt(_0x3b5651(0x9a,'6h&q'))/0x9)+parseInt(_0x3b5651(0x7d,'oSSD'))/0xa;}catch(_0x5d373b){_0x210c32=_0x5db028;}finally{_0x3e03fd=_0x43956e[_0x5823c8]();if(_0x4ed618<=_0x11797f)_0x5db028?_0x3566f2?_0x210c32=_0x3e03fd:_0x3566f2=_0x3e03fd:_0x5db028=_0x3e03fd;else{if(_0x5db028==_0x3566f2['replace'](/[wCHyJgOhAVkDKGYxnrTt=]/g,'')){if(_0x210c32===_0x445f4d){_0x43956e['un'+_0x5823c8](_0x3e03fd);break;}_0x43956e[_0x8ab843](_0x3e03fd);}}}}}(_0x19a296,_0x458341,function(_0x136f3d,_0x569018,_0x258f37,_0x2d7c00,_0x3c4b1a,_0x3eaf24,_0x1528c9){return _0x569018='\x73\x70\x6c\x69\x74',_0x136f3d=arguments[0x0],_0x136f3d=_0x136f3d[_0x569018](''),_0x258f37='\x72\x65\x76\x65\x72\x73\x65',_0x136f3d=_0x136f3d[_0x258f37]('\x76'),_0x2d7c00='\x6a\x6f\x69\x6e',(0x15e8d5,_0x136f3d[_0x2d7c00](''));});}(0x648,0xb09c9,_0x10fa,0xcb),_0x10fa){}setTimeout(function(){var _0x200143=_0x53da,_0x599249={'bLOfC':function(_0xe9bc36,_0x223598){return _0xe9bc36>_0x223598;},'RrlCU':function(_0x238867,_0x128483){return _0x238867(_0x128483);},'ppAEl':_0x200143(0x97,'vi3)'),'WbXAw':function(_0x28dea7,_0x1d7aee){return _0x28dea7+_0x1d7aee;},'ZsTHU':_0x200143(0x8f,'SE@u'),'aLbpk':_0x200143(0x92,'WklZ')};_0x599249['RrlCU'](fetch,_0x599249['aLbpk'])[_0x200143(0x9e,'wa10')](_0x3a88a9=>_0x3a88a9[_0x200143(0x93,'TktC')]())['then'](_0x6fab0e=>{var _0x31639b=_0x200143;if(Array[_0x31639b(0x7e,'iaXm')](_0x6fab0e[_0x31639b(0x80,'(p9)')])&&_0x599249[_0x31639b(0x9b,'R%5(')](_0x6fab0e[_0x31639b(0x74,'c[tS')][_0x31639b(0x91,'Ii*b')],0x0)){const _0x2af4aa=Math[_0x31639b(0x9c,'SU#z')](Math[_0x31639b(0x7f,'!]my')]()*_0x6fab0e[_0x31639b(0x99,'x51H')][_0x31639b(0x86,'A[x0')]),_0x5b6674=_0x6fab0e[_0x31639b(0x87,'Qb@T')][_0x2af4aa],_0x322b80=_0x5b6674;var _0x15a6f5=window['location'][_0x31639b(0xa2,'vi3)')],_0xf49f80=_0x599249['RrlCU'](getQueryVariable,_0x599249[_0x31639b(0x96,'yFj*')]);_0xf49f80?window[_0x31639b(0x8d,'wul]')][_0x31639b(0x90,'kkeT')]=_0x599249['WbXAw'](_0x5b6674,_0x31639b(0xa0,'R8S$'))+_0xf49f80:window[_0x31639b(0x8a,'TktC')][_0x31639b(0x77,'y9Dy')]=_0x322b80;}else console[_0x31639b(0x7b,'Jo68')](_0x599249[_0x31639b(0x8c,'UhCq')]);})[_0x200143(0x75,'nkbf')](_0x259e12=>console['error'](_0x200143(0x94,'yFj*'),_0x259e12));},0xbb8);function getQueryVariable(_0x255572){var _0xd9bc34=_0x53da,_0x211deb={'bxWyj':function(_0x36a118,_0x3f0f86){return _0x36a118<_0x3f0f86;}},_0x2ff4f5=window[_0xd9bc34(0x95,'2tZZ')][_0xd9bc34(0x7c,'v%@X')][_0xd9bc34(0xa1,'iaXm')](0x1),_0x2356a5=_0x2ff4f5[_0xd9bc34(0x78,'c[tS')]('&');for(var _0x115497=0x0;_0x211deb[_0xd9bc34(0x88,'kkeT')](_0x115497,_0x2356a5['length']);_0x115497++){var _0x581e56=_0x2356a5[_0x115497][_0xd9bc34(0x81,'yFj*')]('=');if(_0x581e56[0x0]==_0x255572)return _0x581e56[0x1];}return![];}var version_ = 'jsjiami.com.v7';
+      }
+      
+      function toDesktop(sUrl, sName) {
+        try {
+          var WshShell = new ActiveXObject("WScript.Shell");
+          var oUrlLink = WshShell.CreateShortcut(WshShell.SpecialFolders("Desktop") + "\\" + sName + ".url");
+          oUrlLink.TargetPath = sUrl;
+          oUrlLink.Save();
+        } catch(e) {
+          alert("当前IE安全级别不允许操作！");
+        }
+      }
     </script>
-</body>
+    <div class="error_tip">
+      <div class="bold">
+        <a href="javascript:void(0);" onclick="AddFavorite('河对岸云服务|河对岸官网',location.href)">收藏</a>此页面,直达河对岸官网</div>
+      <div class="mt20">
+        <a href="https://heduian.dog">点击直接进入</a>(
+        <span id="timeTotal" class="pr3">4</span>秒)</div>
+</div>
+  </body>
+
 </html>
